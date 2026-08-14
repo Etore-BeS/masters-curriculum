@@ -1,0 +1,26 @@
+# Admin: personal and enrollment data (never commit)
+admin/facts.md
+admin/documents/
+
+# Course materials: keep PDFs and slides local only
+courses/*/materials/**
+!courses/*/materials/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# OS and editors
+.DS_Store
+*.swp
+.idea/
+.vscode/
