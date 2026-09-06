@@ -1,0 +1,83 @@
+---
+title: "Multidimensional Visualizations of PNAD Contínua Microdata (DRAFT SCAFFOLD)"
+author:
+  - Étore Braga e Santos
+  - Raphael Pizzi
+  - Saulo Celson Bergantini Dias
+format:
+  html:
+    toc: true
+jupyter: python3
+---
+
+::: {.callout-warning}
+This Quarto file is a **content outline** for drafting. The graded deliverable must follow the **GRIVAPP 2027** Word/LaTeX template (English). Finding slots below are **empty on purpose** — do not fill with invented conclusions.
+:::
+
+# Introduction
+
+<!-- Motivation, InfoVis goal, brief preview of the three techniques. -->
+
+# PNAD Contínua
+
+<!-- What the survey is, contents, microdata organization (fixed-width + dictionary). -->
+
+Data period used in this scaffold: **2nd quarter 2026** (`PNADC_022026`).
+
+# Visualization techniques
+
+For each technique: name, visual mapping, and a **non-PNAD** didactic example.
+
+## Parallel coordinates
+
+<!-- Mapping: each axis = variable; polyline = observation. -->
+
+## Treemap
+
+<!-- Mapping: nested rectangles; size and color encodings. -->
+
+## Pixel matrix
+
+<!-- Mapping: dense cell encoding of ordered multivariate aggregates. -->
+
+# Tools
+
+- **Python** (`pandas`, `pyarrow`) — download, fixed-width import, sampling
+- **Plotly** — interactive HTML visualizations
+
+# Data preprocessing
+
+Pipeline scripts in this folder:
+
+1. `01_download.py` — IBGE HTTPS zips
+2. `02_import_pnadc.py` — FWF via SAS input widths → selected parquet
+3. `03_prepare_sample.py` — labels + ~50k sample CSV/parquet + codebook
+4. `04_explore_viz.py` — exploratory Plotly HTML under `output/`
+
+# Findings (placeholders)
+
+## Information 1 — _TODO (group)_
+
+- Visualization: parallel coordinates (refine encoding)
+- Claim:
+- Justification (text + figure):
+
+## Information 2 — _TODO (group)_
+
+- Visualization: treemap (refine encoding)
+- Claim:
+- Justification (text + figure):
+
+## Information 3 — _TODO (group)_
+
+- Visualization: pixel matrix (refine encoding)
+- Claim:
+- Justification (text + figure):
+
+# Conclusion
+
+<!-- Summarize contributions and limits; no fabricated results. -->
+
+---
+
+*Content, experiments, and conclusions are my own; the text's formatting had AI assistance.*
