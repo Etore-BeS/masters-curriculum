@@ -12,6 +12,7 @@ exercises/
     en/
       readme.md    # problem statement and solution notes (English)
     code/          # shared R scripts and Quarto files (optional, add when needed)
+    references.md  # catalog keys used in this exercise
 ```
 
 ## Rules
@@ -20,6 +21,7 @@ exercises/
 - Put R scripts and Quarto files once in `code/` when an exercise needs them. Do not duplicate scripts across language folders.
 - Use dash-case folder names (e.g., `01-ggplot2-basics/`).
 - Number exercises when order matters: `01-slug/`, `02-slug/`.
+- List catalog keys in `references.md`. Add the full record once in [catalog.md](../../../references/catalog.md). Also add the key to the [course references](../references.md).
 
 ## Source material
 

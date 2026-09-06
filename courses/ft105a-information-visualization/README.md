@@ -78,24 +78,16 @@ The course has two parts:
 
 ## Bibliography
 
-### Required
+Full citations live in the [global catalog](../../references/catalog.md). This course lists keys in [references.md](references.md).
 
-- Card, S. K., Mackinlay, J. & Shneiderman, B. *Readings in Information Visualization*. Morgan Kaufmann, 1999.
-- Healy, K. *Data Visualization: A Practical Introduction*. Princeton, 2019. Free: [socviz.co](https://socviz.co/)
-- Mazza, R. *Introduction to Information Visualization*. Springer, 2009. [Springer link](https://link.springer.com/book/10.1007/978-1-84800-219-7) (Unicamp network)
-- Silva, C. G. "Visualização de Informação: introdução e influências de IHC." SBC, 2015.
-- Spence, R. *Information Visualization: An Introduction*. 3rd ed. Springer, 2014. [Springer link](https://link.springer.com/book/10.1007%2F978-3-319-07341-5) (Unicamp network)
-- Wickham, H. et al. *R for Data Science*. 2nd ed. O'Reilly, 2023. Free: [r4ds.hadley.nz](https://r4ds.hadley.nz/)
-
-### Supplementary (free online)
-
-- Wickham, H. et al. *ggplot2: Elegant Graphics for Data Analysis*. 3rd ed. [ggplot2-book.org](https://ggplot2-book.org/)
-- Wilke, C. O. *Fundamentals of Data Visualization*. [clauswilke.com/dataviz](https://clauswilke.com/dataviz/)
-- Rocha, H. V. & Baranauskas, M. C. C. *Design e Avaliação de Interfaces Humano-Computador*. [NIED/Unicamp](https://www.nied.unicamp.br/biblioteca/design-e-avaliacao-de-interfaces-humano-computador)
+Required: `card1999`, `healy2019`, `mazza2009`, `silva2015-infovis`, `spence2014`, `wickham2023-r4ds`. Supplementary: `wickham-ggplot2`, `wilke2019`, `rocha2003`.
 
 ## Folders
 
+- [references.md](references.md) — sources used in this course
 - [notes/](notes/) — study notes
 - [exercises/](exercises/) — bilingual exercise writeups
 - [project/](project/) — Trabalhos 1–3
 - [materials/](materials/) — local PDFs and slides (gitignored)
+- [data/](data/) — PNAD microdata (raw/processed; gitignored binaries)
+- [entregas/](entregas/) — local submission ZIP/PDF

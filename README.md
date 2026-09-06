@@ -2,6 +2,8 @@
 
 Study notes, exercises, and course projects for the master's program. Thesis work lives in a separate repository.
 
+Agents: follow [AGENTS.md](AGENTS.md) for layout, gitignore, language, and the reference catalog.
+
 ## Program
 
 | Field | Value |
@@ -32,6 +34,7 @@ See [courses/README.md](courses/README.md) for the full course index.
 ## Repository layout
 
 - `courses/` — one folder per course with notes, exercises, project, and local materials
+- `references/` — global paper catalog. Courses and exercises point at keys (see [references/README.md](references/README.md))
 - `admin/` — gitignored enrollment documents and a local facts file for bureaucratic forms (see [admin/README.md](admin/README.md))
 
 ## Conventions
@@ -39,3 +42,4 @@ See [courses/README.md](courses/README.md) for the full course index.
 - Course READMEs and notes: English
 - Exercises: bilingual writeups in `pt/` and `en/` subfolders; shared code in `code/` when needed
 - Lecture PDFs: stored locally under each course `materials/` folder; git ignores them
+- Papers: one catalog entry per source. Pointers live in each course, exercise, and project `references.md`. PDFs stay in `references/papers/` and git ignores them.

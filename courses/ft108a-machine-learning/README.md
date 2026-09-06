@@ -64,16 +64,9 @@ Minimum attendance for approval: 75%. No final exam in this course.
 
 ## Bibliography
 
-### Required
+Full citations live in the [global catalog](../../references/catalog.md). This course lists keys in [references.md](references.md).
 
-- Han, J. & Kamber, M. *Data Mining: Concepts and Techniques*. Elsevier, 2006.
-- De Castro, L. N. & Ferrari, D. G. *Introdução à Mineração de Dados*. Saraiva, 2016.
-- Witten, I. H., Frank, E. & Hall, M. A. *Data Mining: Practical Machine Learning Tools and Techniques*. Elsevier, 2011.
-- Zaki, M. J. & Meira Jr., W. *Data Mining and Analysis*. Cambridge University Press, 2014.
-
-### Supplementary
-
-- James, G. et al. *An Introduction to Statistical Learning*. Springer, 2013.
+Required: `han2006`, `decastro2016`, `witten2011`, `zaki2014`. Supplementary: `james2013`.
 
 ## Course rules
 
@@ -83,6 +76,7 @@ Minimum attendance for approval: 75%. No final exam in this course.
 
 ## Folders
 
+- [references.md](references.md) — sources used in this course
 - [notes/](notes/) — study notes
 - [exercises/](exercises/) — bilingual exercise writeups
 - [project/](project/) — semester project and article

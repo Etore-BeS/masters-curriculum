@@ -2,8 +2,12 @@
 
 Semester projects for FT105A (Trabalhos 1–3).
 
-Key dates from the syllabus:
+| Trabalho | Folder | Due |
+| --- | --- | --- |
+| 1 — PNAD Contínua multidimensional viz | [trabalho-1-pnad-multidim/](trabalho-1-pnad-multidim/) | 24/09/2026 |
+| 2 | (TBD) | 05/11/2026 |
+| 3 | (TBD) | 26/11/2026 |
 
-- 24/09 — Trabalho 1 delivery
-- 05/11 — Trabalho 2 delivery
-- 26/11 — Trabalho 3 delivery and final presentations
+Stack for Trabalho 1: **Python** (repo-root `.venv`) + **Plotly** interactive HTML.
+
+Sources: [references.md](references.md). Keys point at the [global catalog](../../../references/catalog.md).

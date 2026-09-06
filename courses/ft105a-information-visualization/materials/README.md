@@ -15,5 +15,8 @@ Drop lecture PDFs and slides here. Git ignores all files in this folder except t
 | `to_pico06-Interac_a_o.pdf` | Topic 6 — Interaction |
 | `to_pico07-Grafos_e_A_rvores.pdf` | Topic 7 — Graphs and trees |
 | `to_pico08-Textos.pdf` | Topic 8 — Text visualization |
+| `enunciado-trabalho-1-pnad-multidim.pdf` | Trabalho 1 assignment (PNAD multidimensional) |
+| `grivapp-2027-authors-instructions.pdf` | GRIVAPP / SCITEPRESS author instructions |
+| `rascunho-grivapp-trabalho-1.docx` | Group draft for Trabalho 1 |
 
-Add R scripts, datasets, and handouts from each class as you receive them.
+Add R/Python handouts from each class as you receive them.
