@@ -6,12 +6,17 @@ admin/documents/
 courses/*/materials/**
 !courses/*/materials/README.md
 
+# Paper PDFs: bibliographic records stay in git
+references/papers/**
+!references/papers/README.md
+
 # Python
 __pycache__/
 *.py[cod]
 .venv/
 venv/
 .env
+.ruff_cache/
 
 # R
 .Rhistory
@@ -19,8 +24,51 @@ venv/
 .Rproj.user/
 *.Rproj
 
+# Jupyter
+.ipynb_checkpoints/
+
+# FT108A: local deliveries and generated exercise artifacts
+courses/ft108a-machine-learning/entregas/**
+!courses/ft108a-machine-learning/entregas/README.md
+!courses/ft108a-machine-learning/entregas/.gitkeep
+courses/ft108a-machine-learning/exercises/*/code/*.pdf
+courses/ft108a-machine-learning/exercises/*/code/*.zip
+courses/ft108a-machine-learning/exercises/*/code/partitions/
+courses/ft108a-machine-learning/exercises/*/code/*.tex
+courses/ft108a-machine-learning/exercises/*/code/*.aux
+courses/ft108a-machine-learning/exercises/*/code/*.log
+courses/ft108a-machine-learning/exercises/*/code/*.out
+courses/ft108a-machine-learning/exercises/*/code/*_files/
+# Exercise 03 Quarto intermediates (keep explicit)
+courses/ft108a-machine-learning/exercises/03-naive-bayes-knn-ensembles-liver/code/report-body.md
+courses/ft108a-machine-learning/exercises/03-naive-bayes-knn-ensembles-liver/code/notebook.tex
+
 # OS and editors
 .DS_Store
 *.swp
 .idea/
 .vscode/
+
+# Course deliveries and generated partitions
+courses/*/entregas/**
+!courses/*/entregas/README.md
+!courses/*/entregas/.gitkeep
+courses/*/exercises/*/code/partitions/**
+!courses/*/exercises/*/code/partitions/.gitkeep
+courses/*/exercises/*/code/*.pdf
+courses/*/exercises/*/code/*.zip
+courses/*/exercises/*/code/*_files/
+courses/*/exercises/*/code/*.tex
+courses/*/exercises/*/code/*.aux
+courses/*/exercises/*/code/*.log
+courses/*/exercises/*/code/*.out
+
+# Course data: keep README tracked; ignore raw/processed binaries
+courses/*/data/raw/
+courses/*/data/processed/
+!courses/*/data/README.md
+
+# Exploratory viz HTML / Quarto intermediates (regenerable)
+courses/ft105a-information-visualization/project/*/code/output/
+courses/ft105a-information-visualization/project/*/code/.quarto/
+courses/ft105a-information-visualization/project/*/code/*_files/

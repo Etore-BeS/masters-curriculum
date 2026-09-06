@@ -1,0 +1,30 @@
+[project]
+name = "masters-curriculum"
+version = "0.1.0"
+description = "Course notes and exercises for UNICAMP PPGT (FT Limeira)"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "numpy",
+    "scikit-learn",
+    "pandas",
+    "matplotlib",
+    "jupyter",
+    "ipykernel",
+    "nbformat",
+    "torch",
+    "plotly>=7.0.0",
+    "pyarrow>=25.0.1",
+    "openpyxl>=3.1.5",
+    "xlrd>=2.0.2",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+]
+manim = [
+    "manim",
+]
+
+[tool.uv]
+package = false
