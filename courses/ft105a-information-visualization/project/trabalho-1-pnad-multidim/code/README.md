@@ -1,5 +1,9 @@
 # Code — Trabalho 1 PNAD
 
-Fonte da verdade: `pnad_dataviz.ipynb` (Plotly inline no Jupyter).
-Scripts 01-04: so reprocessar microdados.
-HTML em output/ e opcional e nao substitui o notebook.
+Dois notebooks, que sao a fonte da verdade (Plotly inline no Jupyter):
+
+- `pnad_dataviz.ipynb` — seis tecnicas sobre a amostra de 50 mil registros.
+- `pnad_analise_ponderada.ipynb` — tres tecnicas sobre o trimestre inteiro com peso amostral. Precisa do extrato gerado por `05_prepare_extrato.py`.
+
+Scripts 01-05: so reprocessar microdados.
+HTML em output/ e opcional e nao substitui os notebooks.
