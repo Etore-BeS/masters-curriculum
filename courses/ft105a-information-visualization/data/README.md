@@ -30,5 +30,6 @@ Keep this README tracked. Large binaries stay local.
 | `processed/pnadc_2026q2_sample.csv` | ~50k labeled sample for viz |
 | `processed/pnadc_2026q2_sample.parquet` | Same sample, parquet |
 | `processed/pnadc_2026q2_codebook.csv` | Column → origin variable |
+| `processed/pnadc_2026q2_extrato.parquet` | All rows, 63 columns, for the weighted analysis |
 
-Regenerate with `project/trabalho-1-pnad-multidim/code/01_download.py` … `03_prepare_sample.py`.
+Regenerate with `project/trabalho-1-pnad-multidim/code/01_download.py` … `03_prepare_sample.py`, plus `05_prepare_extrato.py` for the wide extract.
