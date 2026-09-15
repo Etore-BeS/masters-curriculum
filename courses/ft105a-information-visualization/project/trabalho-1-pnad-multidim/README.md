@@ -13,12 +13,21 @@
 - [x] Access PNAD Contínua site / microdata downloads (URLs in `code/01_download.py`)
 - [x] Obtain `PNADC_022026.zip` (2T/2026) — confirmed on IBGE FTP
 - [x] Obtain `Dicionario_e_input_20221031.zip` (Documentação)
-- [ ] Propose **3 interactive** multidimensional visualizations, **3 distinct techniques**, each with **>3 variables**
+- [x] Propose **3 interactive** multidimensional visualizations, **3 distinct techniques**, each with **>3 variables** — bubble scatter, small-multiples heatmap and Sankey, in `code/pnad_analise_ponderada.ipynb`
 - [ ] For each insight: justification with viz image(s) + text (**student writes the 3 informações**)
 - [ ] Report in **GRIVAPP 2027** format (Word/LaTeX template later): Intro, PNAD, Techniques, Tools, Preprocessing, Findings, Conclusion
 - [ ] Deliver by **24/09/2026**
 
 Draft techniques (from group DOCX): **Parallel Coordinates**, **Treemap**, **Pixel matrix**.
+
+## Notebooks
+
+| Notebook | Scope |
+| --- | --- |
+| `code/pnad_dataviz.ipynb` | Six techniques over a 50k sample (sections 1-6) |
+| `code/pnad_analise_ponderada.ipynb` | Three techniques over the full quarter with the sampling weight (sections 7-9) |
+
+The second notebook needs the wide extract, which is not in the repository. Generate it with `code/05_prepare_extrato.py` before running it. All rates, means and medians there are weighted by `V1028`; totals match the IBGE release for 2026Q2 (unemployment 5.4%, informality 37.4%, mean usual income R$ 3,738).
 
 ## Paths
 
@@ -26,7 +35,7 @@ Draft techniques (from group DOCX): **Parallel Coordinates**, **Treemap**, **Pix
 | --- | --- |
 | `../../../data/raw/` | Zips + extracted fixed-width TXT (gitignored) |
 | `../../../data/processed/` | Selected parquet + sample CSV/parquet + codebook (gitignored) |
-| `code/` | Download → import → sample → exploratory viz |
+| `code/` | Download → import → sample → exploratory viz → wide extract |
 | `code/output/` | Exploratory Plotly HTML (scaffold) |
 | `docs/` | Enunciado, GRIVAPP instructions, rascunho DOCX |
 | `../../../materials/` | Course materials copies (gitignored binaries) |
@@ -43,6 +52,7 @@ python 01_download.py
 python 02_import_pnadc.py      # ~few minutes; reads 1.7G FWF
 python 03_prepare_sample.py    # writes ~50k-row sample
 python 04_explore_viz.py       # writes HTML under output/
+python 05_prepare_extrato.py   # ~few minutes; 63-column extract for the weighted notebook
 ```
 
 Or with `uv` from repo root:
@@ -65,7 +75,7 @@ Titles are prefixed **EXPLORATORY — scaffold**. Replace / refine encodings aft
 
 ## Still for the student
 
-1. Write the **3 informações** (findings) with convincing justifications — do not invent them in scaffold docs.
+1. Move the three findings from `code/pnad_analise_ponderada.ipynb` into the report, with the figures.
 2. Polish interactivity and visual encodings for submission-quality Plotly (or equivalent Python) HTML.
 3. Produce the **GRIVAPP 2027** camera-ready PDF (English) from the Word/LaTeX template; Quarto/Jupyter here is only a content outline.
 4. Package delivery into `entregas/` by the due date.
