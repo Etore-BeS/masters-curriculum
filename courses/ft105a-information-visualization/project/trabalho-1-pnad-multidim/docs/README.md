@@ -1,9 +1,11 @@
-# Project docs (local copies)
+# Docs do projeto
 
-| File | Source |
+| Arquivo | Conteúdo |
 | --- | --- |
-| `enunciado-trabalho-1.pdf` | Assignment PDF (also in course `materials/`) |
-| `grivapp-2027-authors-instructions.pdf` | SCITEPRESS / GRIVAPP author instructions |
-| `rascunho-grivapp.docx` | Group draft (techniques + authors) |
+| `enunciado-trabalho-1.pdf` | Enunciado Celmar |
+| `grivapp-2027-authors-instructions.pdf` | Instruções de autores GRIVAPP / SCITEPRESS |
+| `rascunho-grivapp.docx` | Rascunho do grupo |
 
-Binaries may be gitignored via course `materials/` rules; keep this folder for convenience next to the code.
+Template Word/LaTeX oficial: https://grivapp.scitevents.org/Templates.aspx  
+
+Conteúdo analítico para o PDF: notebook `../code/pnad_trabalho1_relatorio.ipynb` (não há mais scaffold Quarto neste projeto).

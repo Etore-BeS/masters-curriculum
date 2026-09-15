@@ -1,21 +1,23 @@
 # Code — Trabalho 1 PNAD
 
-## Official graded trio
+## Trio da entrega
 
-1. Bubble scatter (UF informality × income)
-2. Heatmap small-multiples (unemployment)
-3. Sankey (labour force 25–49) — design for a clear static/default frame
+1. Bubble scatter (UF)  
+2. Heatmap small-multiples  
+3. Sankey 25–49 (quadro estático/padrão)
 
-Delivery is a **static** GRIVAPP PDF; interactive menus are optional polish, not the narrative dependency.
+PDF GRIVAPP é estático; interação no Plotly é opcional.
 
-## Notebooks (source of truth)
+## Notebooks
 
-| Notebook | Authors | Role |
+| Arquivo | Autores | Papel |
 | --- | --- | --- |
-| `pnad_analise_ponderada.ipynb` | Raphael Pizzi | Official weighted trio |
-| `pnad_trabalho1_relatorio.ipynb` | Étore Braga e Santos, Raphael Pizzi, Saulo Celson Bergantini Dias | Final academic report (trio + Appendix) |
-| `pnad_dataviz.ipynb` | (exploratory) | Parallel / treemap / pixels / SPLOM / parallel sets / RadViz — **appendix / exploration only** |
+| `pnad_analise_ponderada.ipynb` | Raphael Pizzi | Trio com peso `V1028` |
+| `pnad_trabalho1_relatorio.ipynb` | Étore, Raphael, Saulo | Relatório (trio + apêndice) |
+| `pnad_dataviz.ipynb` | exploração | Paralelas / treemap / pixels / etc. — apêndice |
 
-Weighted + report notebooks need the extract from `05_prepare_extrato.py` (`../../../data/processed/pnadc_2026q2_extrato.parquet`, gitignored).
+Extrato: `05_prepare_extrato.py` → `../../../data/processed/pnadc_2026q2_extrato.parquet` (gitignored).
 
-Scripts 01–05: reprocess microdata only. HTML under `output/` is optional exploration and does not replace the notebooks.
+Scripts `01`–`05` só reprocessam microdados. HTML em `output/` é exploração.
+
+GitHub: [code/](https://github.com/Etore-BeS/masters-curriculum/tree/main/courses/ft105a-information-visualization/project/trabalho-1-pnad-multidim/code)

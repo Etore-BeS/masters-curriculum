@@ -1,91 +1,71 @@
-# Trabalho 1 — PNAD Contínua multidimensional visualization
+# Trabalho 1 — PNAD Contínua (visualização multidimensional)
 
-| Field | Value |
+| | |
 | --- | --- |
-| Course | FT105A InfoVis |
-| Due | 2026-09-24 |
-| Authors | Étore Braga e Santos, Raphael Pizzi, Saulo Celson Bergantini Dias |
-| Stack | Python (repo-root `.venv`) + Plotly (figures designed for **static** PDF/GRIVAPP) |
-| Data | PNAD Contínua microdados 2º trimestre 2026 (`PNADC_022026.zip`) |
-| Delivery | **Static** camera-ready PDF (GRIVAPP 2027); interactive filters are not required for the main narrative |
+| Disciplina | FT105A InfoVis |
+| Entrega | **24/09/2026** — PDF estático no formato [GRIVAPP 2027](https://grivapp.scitevents.org/Templates.aspx) |
+| Grupo | Étore Braga e Santos, Raphael Pizzi, Saulo Celson Bergantini Dias |
+| Stack | Python (`.venv` na raiz do repo) + Plotly |
+| Dados | PNAD Contínua, 2º trimestre 2026 (`PNADC_022026.zip`) |
 
-## Official graded trio (locked)
+Repo no GitHub: [trabalho-1-pnad-multidim](https://github.com/Etore-BeS/masters-curriculum/tree/main/courses/ft105a-information-visualization/project/trabalho-1-pnad-multidim)
 
-Three distinct techniques, each with >3 mapped variables, for the graded delivery:
+## Trio da entrega
 
-1. **Bubble scatter** — UF informality × income (area = employed; colour = region)
-2. **Heatmap small-multiples** — unemployment by age × sex × colour/race (panels: Brasil + regions)
-3. **Sankey** — labour-force participation ages 25–49 (sex → young child at home → labour status); use a **clear default/static frame** (all schooling levels)
+Três técnicas distintas (>3 variáveis cada), pensadas para ler bem em PDF:
 
-Source of the graded analysis: `code/pnad_analise_ponderada.ipynb` (author: **Raphael Pizzi**).
+1. **Dispersão com bolhas** — informalidade × renda por UF  
+2. **Heatmap em small multiples** — desocupação por idade × sexo × cor/raça  
+3. **Sankey** — força de trabalho 25–49 (sexo → criança pequena em casa → situação); usar o quadro padrão (todas as escolaridades)
 
-Final academic report notebook (content outline for the GRIVAPP PDF): `code/pnad_trabalho1_relatorio.ipynb` (authors: all three group members) — created on `main` after merge.
+Análise ponderada (`V1028`): [`code/pnad_analise_ponderada.ipynb`](code/pnad_analise_ponderada.ipynb) — **Raphael Pizzi**.  
+Notebook do relatório (trio + apêndice): [`code/pnad_trabalho1_relatorio.ipynb`](code/pnad_trabalho1_relatorio.ipynb) — os três autores.
 
-## Assignment checklist (from enunciado)
+Totais de checagem (IBGE 2026Q2): desocupação 5,4%; informalidade 37,4%; rendimento médio habitual R$ 3.738.
 
-- [x] Access PNAD Contínua site / microdata downloads (URLs in `code/01_download.py`)
-- [x] Obtain `PNADC_022026.zip` (2T/2026) — confirmed on IBGE FTP
-- [x] Obtain `Dicionario_e_input_20221031.zip` (Documentação)
-- [x] Propose **3** multidimensional visualizations, **3 distinct techniques**, each with **>3 variables** — official trio above
-- [ ] For each insight: justification with viz image(s) + text (in the final report notebook / GRIVAPP PDF)
-- [ ] Report in **GRIVAPP 2027** format (static PDF): Intro, PNAD, Techniques, Tools, Preprocessing, Findings, Conclusion + Appendix
-- [ ] Deliver by **24/09/2026**
+## Onde pegar o quê (montagem do PDF)
 
-## Exploration only (not the graded trio)
-
-Draft techniques from the group DOCX — **parallel coordinates**, **treemap**, **pixel matrix** — plus SPLOM / parallel sets / RadViz in `code/pnad_dataviz.ipynb` and HTML under `code/output/`. These stay as **exploratory / appendix** material only; they are not the official graded set.
-
-## Notebooks
-
-| Notebook | Authors (of that file) | Scope |
-| --- | --- | --- |
-| `code/pnad_dataviz.ipynb` | (exploratory support) | Six techniques over a 50k sample |
-| `code/pnad_analise_ponderada.ipynb` | **Raphael Pizzi** | Official trio over the full quarter, weighted by `V1028` |
-| `code/pnad_trabalho1_relatorio.ipynb` | Étore, Raphael, Saulo | Final academic InfoVis report outline (main trio + Appendix) |
-
-The weighted notebook needs the wide extract, which is not in the repository. Generate it with `code/05_prepare_extrato.py` before running it. All rates, means and medians there are weighted by `V1028`; totals match the IBGE release for 2026Q2 (unemployment 5.4%, informality 37.4%, mean usual income R$ 3,738).
-
-## Paths
-
-| Path | Role |
+| O quê | Onde |
 | --- | --- |
-| `../../../data/raw/` | Zips + extracted fixed-width TXT (gitignored) |
-| `../../../data/processed/` | Selected parquet + sample + extrato (gitignored) |
-| `code/` | Download → import → sample → exploratory viz → wide extract → notebooks |
-| `code/output/` | Exploratory Plotly HTML (scaffold; not graded) |
-| `entregas/figures/` or `code/output/figures/` | Static PNG exports for the PDF |
-| `docs/` | Enunciado, GRIVAPP instructions, rascunho DOCX |
-| `../../../materials/` | Course materials copies (gitignored binaries) |
-| `../../../entregas/` | Final submission ZIP/PDF (local only) |
+| Notebook do relatório + figs | [`code/pnad_trabalho1_relatorio.ipynb`](https://github.com/Etore-BeS/masters-curriculum/blob/main/courses/ft105a-information-visualization/project/trabalho-1-pnad-multidim/code/pnad_trabalho1_relatorio.ipynb) |
+| Trio ponderado (detalhe) | [`code/pnad_analise_ponderada.ipynb`](https://github.com/Etore-BeS/masters-curriculum/blob/main/courses/ft105a-information-visualization/project/trabalho-1-pnad-multidim/code/pnad_analise_ponderada.ipynb) |
+| PNGs estáticos (se já rodou local) | `entregas/figures/` ou `code/output/figures/` (gitignored) |
+| Enunciado | [`docs/enunciado-trabalho-1.pdf`](docs/enunciado-trabalho-1.pdf) |
+| Instruções / template GRIVAPP | [`docs/grivapp-2027-authors-instructions.pdf`](docs/grivapp-2027-authors-instructions.pdf) · [Templates GRIVAPP](https://grivapp.scitevents.org/Templates.aspx) |
+| Rascunho do grupo | [`docs/rascunho-grivapp.docx`](docs/rascunho-grivapp.docx) |
+| Status em PT | [`pt/readme.md`](pt/readme.md) |
 
-## How to run
+Coordenadas paralelas / treemap / pixels (e outras em `pnad_dataviz.ipynb`) ficam no **apêndice** — não são o trio da entrega.
 
-From the repository root (uses shared `.venv`):
+## Checklist
+
+- [x] Microdados + dicionário
+- [x] Pipeline Python (`01`…`05`)
+- [x] Trio oficial + notebook de relatório
+- [ ] Três informações com justificativa (texto + figuras) no PDF
+- [ ] PDF GRIVAPP em inglês → `entregas/` até 24/09
+
+## Como rodar
+
+Na raiz do repo (`.venv` compartilhado):
 
 ```bash
 cd courses/ft105a-information-visualization/project/trabalho-1-pnad-multidim/code
-source ../../../../../.venv/bin/activate   # or: uv run from repo root
+source ../../../../../.venv/bin/activate
 python 01_download.py
-python 02_import_pnadc.py      # ~few minutes; reads 1.7G FWF
-python 03_prepare_sample.py    # writes ~50k-row sample
-python 04_explore_viz.py       # writes HTML under output/ (exploration)
-python 05_prepare_extrato.py   # ~few minutes; 63-column extract for weighted / report notebooks
+python 02_import_pnadc.py
+python 03_prepare_sample.py
+python 04_explore_viz.py       # HTML exploratório opcional
+python 05_prepare_extrato.py   # extrato 63 cols (gitignored) p/ ponderado + relatório
 ```
 
-Or with `uv` from repo root:
+Dependências: `pandas`, `pyarrow`, `plotly`, `numpy`; `kaleido` ajuda no PNG estático.
 
-```bash
-uv run python courses/ft105a-information-visualization/project/trabalho-1-pnad-multidim/code/02_import_pnadc.py
-```
+## Pastas
 
-Dependencies: `pandas`, `pyarrow`, `plotly`, `numpy` (plus `kaleido` for static PNG export if available; `openpyxl`/`xlrd` if you open the XLS dictionary).
-
-## Still for the group
-
-1. Run the final report notebook after generating the extrato; export static PNGs of the official trio.
-2. Produce the **GRIVAPP 2027** camera-ready PDF (English) from the Word/LaTeX template using that notebook as content source.
-3. Package delivery into `entregas/` by the due date.
-
-## Attribution note
-
-Scaffold/pipeline setup had AI assistance. Graded analysis in `pnad_analise_ponderada.ipynb` is authored by Raphael Pizzi. Content, analysis, and conclusions for the graded report are the group's responsibility.
+| Path | Uso |
+| --- | --- |
+| `../../../data/raw/` · `processed/` | Zips / parquet (gitignored) |
+| `code/` | Scripts + notebooks |
+| `docs/` | Enunciado, GRIVAPP, rascunho |
+| `../../../entregas/` | PDF/ZIP finais (local) |
