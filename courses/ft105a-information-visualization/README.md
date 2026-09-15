@@ -25,6 +25,10 @@ The course has two parts:
 1. **Part I** — InfoVis concepts: visual structures, mapping, multivariate data, text, networks, and trees.
 2. **Part II** — R lab: tidyverse, ggplot2, multivariate plots, text and network visualization, statistics for visualization, Quarto/R Markdown reproducibility.
 
+## Trabalho 1 (PNAD)
+
+Official graded visualizations (static GRIVAPP PDF): **bubble scatter**, **heatmap small-multiples**, **Sankey**. Content outline: [`project/trabalho-1-pnad-multidim/code/pnad_trabalho1_relatorio.ipynb`](project/trabalho-1-pnad-multidim/code/pnad_trabalho1_relatorio.ipynb).
+
 ## Assessment
 
 | Symbol | Meaning |
