@@ -8,6 +8,6 @@ Semester projects for FT105A (Trabalhos 1–3).
 | 2 | (TBD) | 05/11/2026 |
 | 3 | (TBD) | 26/11/2026 |
 
-Stack for Trabalho 1: **Python** (repo-root `.venv`) + **Plotly** interactive HTML.
+Stack for Trabalho 1: **Python** (repo-root `.venv`) + **Plotly** figures for a **static** GRIVAPP PDF (official trio: bubble scatter, heatmap small-multiples, Sankey).
 
 Sources: [references.md](references.md). Keys point at the [global catalog](../../../references/catalog.md).

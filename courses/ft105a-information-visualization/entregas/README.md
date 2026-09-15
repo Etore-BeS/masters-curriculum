@@ -4,9 +4,7 @@ Local submission ZIP/PDF artifacts. Git ignores binaries; keep this README and `
 
 ## Trabalho 1 (due 2026-09-24)
 
-Expected (when ready):
-
-- GRIVAPP 2027 camera-ready PDF (English)
-- Optional: HTML interactive viz bundle or figures used in the report
-
-Do not store final delivery binaries under `project/*/code/` permanently — move them here.
+- **Official graded trio:** bubble scatter (UF informality × income), heatmap small-multiples (unemployment), Sankey (labour force 25–49).
+- **Delivery:** static GRIVAPP 2027 PDF (not interactive HTML as the primary artifact).
+- Content source for the PDF: `project/trabalho-1-pnad-multidim/code/pnad_trabalho1_relatorio.ipynb`.
+- Optional static figure exports: `figures/` under this folder (create locally; binaries gitignored).
